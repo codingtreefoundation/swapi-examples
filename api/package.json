@@ -5,9 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:favourites": "(cd react-favourites && npm install) && (cd react-favourites && npm run build)",
-    "build:api": "cd api && npm install && npm run build:api"
+    "build:api": "netlify-lambda build src"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "firebase-admin": "^8.13.0",
+    "netlify-lambda": "^1.6.3"
+  }
 }

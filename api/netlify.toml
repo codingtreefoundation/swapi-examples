@@ -1,7 +1,7 @@
 [build]
   publish = "dist"
   command = "npm run build:favourites && npm run build:api"
-  functions = "./api/functions"
+  functions = "../functions"
 
 [template.environment]
   HELLO_ENV = "hello env"
